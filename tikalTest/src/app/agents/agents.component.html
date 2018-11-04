@@ -1,0 +1,25 @@
+<div class="agents-page">
+        <div class="part-a">the answer to part 1 is: {{ isolatedCountry }}</div>
+
+
+        <div class="table-wrap part-b">
+            <ul class="headers-wrap">
+                <li class="agent-id header-text">Agent ID</li>
+                <li class="agent-country header-text">Country</li>
+                <li class="agent-address header-text">Address</li>
+                <li class="agent-date header-text">Date</li>
+            </ul>
+        
+            <ul class="agent-rows">
+                <li class="agent-row" *ngFor="let agent of agents$">
+                 <span class="agent-id agent-details">{{ agent.agent }}</span>
+                 <span class="agent-country agent-details">{{ agent.country }}</span>
+                 <span class="agent-address agent-details">{{ agent.address }}</span>
+                 <span class="agent-date agent-details">{{ agent.date }}</span>
+                </li>
+              </ul>
+              <div class="mission-counter">
+                   <span class="mission-counter__text">{{missionLength}} missions</span>
+                </div>
+        </div>
+</div>

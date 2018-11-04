@@ -1,0 +1,74 @@
+.agents-page
+{
+    .part-a {
+        font-size: 22px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+    }
+    
+    .table-wrap {
+        border: 1px solid #8e8e8e;
+        max-width: 80%;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    
+        .headers-wrap {
+            display: flex;
+            flex-direction: row;
+            margin: 10px 0px 10px 0px;
+            padding: 0;
+    
+            .header-text {
+                font-weight: bold;
+                display: block;
+                padding: 15px;
+                border-left: 1px solid #8e8e8e;
+    
+                &:first-child {
+                    border-left: none;
+                }
+            }
+    
+            .agent-id { width: 10%; }
+            .agent-country { width: 10%; }
+            .agent-address { width: 50%; }
+            .agent-date { width: 30%; }
+        }
+        .agent-rows {
+            border-top: 1px solid #8e8e8e;
+            padding-top: 10px;
+            margin: 10px 0px 10px 0px;
+            width: 100%;
+            padding: 0;
+    
+            .agent-row {
+                display: flex;
+                flex-direction: row;
+                font-size: 18px;
+                border-top: 1px solid #8e8e8e;
+    
+                .agent-details {
+                    padding: 15px;
+                 }
+    
+                .agent-id { width: 10%; }
+                .agent-country { width: 10%; }
+                .agent-address { width: 50%; }
+                .agent-date { width: 30%; }
+            }
+        }
+    
+        .mission-counter {
+            height: 30px;
+            padding: 10px;
+            border-top: 2px solid #8e8e8e;
+            display: flex;
+            flex-direction: row-reverse;
+    
+            &__text {
+             padding: 5px;
+            }
+        }
+    }
+}
